@@ -3,22 +3,25 @@
  * You can safely leave this file untouched, and confine your changes to index.js.
  */
 
+
 // Set up data structures
 const streams = {
   home: [],
   users: {
-    shawndrost: [],
-    sharksforcheap: [],
-    mracus: [],
-    douglascalhoun: [],
+    guest: [[]],
+    shawndrost: [[]],
+    sharksforcheap: [[]],
+    mracus: [[]],
+    douglascalhoun: [[]],
   },
 };
 const users = Object.keys(streams.users);
 
+
 // Utility function for adding tweets to our data structures
 const addTweet = (newTweet) => {
   const username = newTweet.user;
-  streams.users[username].push(newTweet);
+  streams.users[username][0].push(newTweet);
   streams.home.push(newTweet);
 };
 
@@ -67,6 +70,7 @@ scheduleNextTweet();
 
 // Utility function for letting students add "write a tweet" functionality
 // (NOTE: Not used by the rest of this file.)
+window['visitor'] = 'guest';
 const writeTweet = (message) => {
   const visitor = window.visitor;
 
@@ -77,6 +81,13 @@ const writeTweet = (message) => {
   const tweet = {
     user: visitor,
     message: message,
+    created_at: new Date()
+
   };
   addTweet(tweet);
 };
+
+const signUp = (userName, password) => {
+  console.log('signup')
+  streams['users'][userName] = [[], password];
+}

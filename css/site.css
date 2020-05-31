@@ -1,0 +1,122 @@
+
+
+
+#feed {
+    text-align: center;
+    
+}
+#tweet-div {
+/* background-color: rgb(255, 215, 128); */
+border: medium dashed green;
+
+width: 300px;
+height: 50px;
+display: table;
+margin-right: auto;
+margin-left: auto;
+}
+#header {
+    text-align: center;
+}
+
+body {
+    background: rgb(255, 208, 0);
+
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  padding: 30px;
+}
+
+#update{
+    height:20px;
+    width:50px;
+    color:goldenrod;
+    margin-left: auto;
+
+}
+
+.tweet-div {
+    /* border-bottom: violet;
+    border-top: tomato; */
+    /* border-width: 1pt;
+    border: 2px solid; */
+    border: double;
+    padding-inline-start: 1pt;
+    width:500px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  
+
+   
+}
+
+.tweet-users:hover {
+
+    color: rgb(255, 240, 240);
+
+  }
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 75px;
+      
+
+}
+
+#labelText { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-tweet-button {
+    
+    display: table;
+    margin: auto;
+}
+#sign-in-form{
+border: double;
+}
+
+#sign-up-but{
+    color: orange;
+}
+
+#henny{
+    background-color: green;
+}
+
+.t{
+background-color: orange;
+}
+#signin{
+    width: 300px;
+    height: 80px;
+}
+#login{
+    width: 300px;
+    height: 80px;
+}
+#log-in-form{
+    width: 80px;
+    height: 28px;
+}
+h1{
+
+}
+#sign-up-form{
+    width: 300px;
+    height: 100px;
+}
