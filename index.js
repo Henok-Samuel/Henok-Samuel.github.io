@@ -20,9 +20,12 @@ $(document).ready(() => {
   const $textAreaSection = $('<section id=textarea></section>');
   
   //Appending of Sections to the body 
-  
-  $body.append($signInSection);
-  $body.append($logInSection);
+  const $divForSignAndLog = $('<div id=sign-and-log></div>');
+
+
+  $divForSignAndLog.append($signInSection);
+  $divForSignAndLog.append($logInSection);
+  $body.append($divForSignAndLog);
   $body.append($signOutSection);
   $body.append($textAreaSection);
   $body.append($buttonSection);
@@ -82,9 +85,11 @@ $(document).ready(() => {
   if(array.length === 0){
     console.log(1);
     $feedSection.empty();
-    $feedSection.append($(`<h1>No Tweets Posted Yet ${name} :p</h1>`))
+    $feedSection.append($(`<h1>No Tweets Posted By You</h1>`))
     return 
+
   }
+  var $feedDiv= $('<div id=feeddiv></div>')
       for(let i = array.length - 1; i > -1; i--){
         //Current elemenet assigned to a variable called tweetObj
         let tweetObj = array[i];
@@ -98,8 +103,10 @@ $(document).ready(() => {
           displayFeed(streams.users[tweetObj.user][0])}));
         $div.append(`<div id=${tweetObj.created_at} class=tweets t>${tweetObj.created_at}</div>`);
         //Append $div container to the feed section 
-        $feedSection.append($div);
+        $feedDiv.append($div);
+
       }
+      $feedSection.append($feedDiv);
     } 
     // $(`<div id=${tweetObj.user} class=tweets tweetsuser>${tweetObj.user}</div>`).click(function() {
     //   displayFeed(streams.user[tweetObj.user])
@@ -138,17 +145,21 @@ $(document).ready(() => {
     $('#s-name').val('')
     $('#s-password').val('')
     alert('Sign Up Successful')
+   
     
     $signInSection.hide();
     $logInSection.hide()
-    $signOutSection.append($(`<h1>Welcome ${name}</h1>`))
-    $signOutSection.append($(`<div><label>Sign Out</label><br></div>`))
+    $divForSignAndLog.hide();
+    $signOutSection.append($(`<h1 class=center>Welcome ${name}</h1>`))
+    $signOutSection.append($(`<div></div>`))
     $textAreaSection.show();
     $buttonSection.hide()
     displayFeed(streams.users[name][0]);
-    $homeButtonSection.append('<button>Home Feed</button>');
+    $homeButtonSection.append('<button>Home Feed</button>').click(function(){
+      
+    });
 
-    $signOutSection.append($('<input type="button" value="Sign Out"></input>').click(function(){
+    $signOutSection.append($('<input id=sign-out-button type="button" value="Sign Out"></input>').click(function(){
       $signOutSection.empty();
       $signInSection.show();
       $logInSection.show()

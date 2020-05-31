@@ -61,7 +61,8 @@ body {
 
 .tweet-users:hover {
 
-    color: rgb(255, 240, 240);
+    color: black;
+    font-weight: bold;
 
   }
 
@@ -71,6 +72,7 @@ textarea {
     margin-right: auto;
     width: 300px;
     height: 75px;
+  
       
 
 }
@@ -85,6 +87,7 @@ textarea {
     
     display: table;
     margin: auto;
+    padding-right: 13px; 
 }
 #sign-in-form{
 border: double;
@@ -101,22 +104,58 @@ border: double;
 .t{
 background-color: orange;
 }
+
 #signin{
-    width: 300px;
-    height: 80px;
+    width: 200px;
+    height: 180px;
 }
 #login{
-    width: 300px;
-    height: 80px;
+    width: 200px;
+    height: 180px;
 }
 #log-in-form{
-    width: 80px;
-    height: 28px;
+    width: 150px;
+    height: 180px;
 }
 h1{
 
 }
 #sign-up-form{
-    width: 300px;
-    height: 100px;
+    width: 150px;
+    height: 180px;
+}
+input{
+    background-color: rgb(221, 218, 212);
+    color: black;
+}
+#sign-and-log{
+    width: 180px;
+    height: 380px;
+}
+#button{
+    width: 70px;
+    height: 50px;
+
+}
+#homebutton{
+    width: 80px;
+    height: 19px;
+    display: table;
+    margin: auto;
+    /* padding-right: 100pc; */
+}
+#sign-out-button{
+    /* float:right; */
+    width:60px;
+    height:30px;
+}
+#div-text-area{
+    /* float:right; */
+    width:600px;
+    height:100px;
+}
+
+#textarea{
+    width:400px;
+    height:130px;
 }
