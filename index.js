@@ -290,8 +290,8 @@ $(document).ready(() => {
       }))
     } else {
       alert('You must enter a valid Username and Passowrd to Log In')
-      $('#s-name').val('')
-      $('#s-password').val('')
+      $('#log-user').val('')
+      $('#log-pass').val('')
     }
   }))
   $logInForm.prependTo($rightSideBarDiv);
