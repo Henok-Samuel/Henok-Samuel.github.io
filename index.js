@@ -90,7 +90,7 @@ $(document).ready(() => {
       var $feedDiv = $('<div id=feeddiv></div>');
 
 
-      $timeLineDiv.append('<div id=timeline><h1>TimeLine</h1><div>')
+      $timeLineDiv.append('<div id=timeline><h1>Timeline</h1><div>')
 
 
       for (let i = array.length - 1; i > -1; i--) {
