@@ -1,161 +1,158 @@
+body{
+margin: 0;
+padding: 0;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+background-color:  goldenrod;
+}
 
+#allContent{
+ text-align: center;   
+background-color: goldenrod
 
+}
 
-#feed {
-    text-align: center;
+#center-div{
+    background-color: goldenrod;
+    display: inline-block;
+    /* min-height: 800px; */
+    width: 47%;
     
 }
-#tweet-div {
-/* background-color: rgb(255, 215, 128); */
-border: medium dashed green;
 
-width: 300px;
-height: 50px;
-display: table;
-margin-right: auto;
-margin-left: auto;
-}
-#header {
-    text-align: center;
+#left-sidebar{
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    background-color:  goldenrod;
+    height: 800px;
+    width: 318px;
+    
 }
 
-body {
-    background: rgb(255, 208, 0);
-
-}
-
-.center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10px;
-  padding: 30px;
-}
-
-#update{
-    height:20px;
-    width:50px;
-    color:goldenrod;
-    margin-left: auto;
-
-}
-
-.tweet-div {
-    /* border-bottom: violet;
-    border-top: tomato; */
-    /* border-width: 1pt;
-    border: 2px solid; */
-    border: double;
-    padding-inline-start: 1pt;
-    width:500px;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-  
-
+#right-sidebar{
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    background-color:goldenrod;;
+    height: 800px;
+    width: 318px;
+    /* border-radius: 3%; */
    
+
 }
-
-.tweet-users:hover {
-
-    color: black;
-    font-weight: bold;
-
-  }
-
 textarea {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 300px;
     height: 75px;
-  
+    border-radius: 10px;
+
       
 
 }
-
-#labelText { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.tweet-div {
+    border-bottom: rgb(78, 22, 78);
+    border-top: rgb(14, 10, 9); 
+    border-width: 1pt;
+    border: 3px solid; 
+    border-color: whitesmoke;
+    border-style: outset;
+    border: 3px solid; 
+    margin-bottom: 10px; 
 }
-
-#add-tweet-button {
-    
-    display: table;
-    margin: auto;
-    padding-right: 13px; 
-}
-#sign-in-form{
-border: double;
-}
-
-#sign-up-but{
-    color: orange;
-}
-
-#henny{
-    background-color: green;
-}
-
-.t{
-background-color: orange;
-}
-
-#signin{
-    width: 200px;
-    height: 180px;
-}
-#login{
-    width: 200px;
-    height: 180px;
-}
-#log-in-form{
-    width: 150px;
-    height: 180px;
-}
-h1{
+.tweet-div:hover{
+    transform: scale(1.02);
+    background-color: rgb(255, 255, 255);
 
 }
-#sign-up-form{
-    width: 150px;
-    height: 180px;
-}
-input{
-    background-color: rgb(221, 218, 212);
-    color: black;
-}
-#sign-and-log{
-    width: 180px;
-    height: 380px;
-}
-#button{
-    width: 70px;
-    height: 50px;
+.left-side{
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    background-color: goldenrod);
+    height: 800px;
+    width: 318px;
 
 }
-#homebutton{
-    width: 80px;
-    height: 19px;
-    display: table;
-    margin: auto;
-    /* padding-right: 100pc; */
+.right-side{
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    background-color: goldenrod;
+    height: 800px;
+    width: 318px;
 }
+
+#textarea-button{
+    display: inline-block;
+    margin-top:50px;
+
+}
+
+.up-button{
+height:50px;
+width:70px;
+font-weight : bolder;
+
+
+}
+.up-button:hover{
+    background-color: whitesmoke;
+    transform: scale(1.2);
+}
+
 #sign-out-button{
-    /* float:right; */
-    width:60px;
-    height:30px;
-}
-#div-text-area{
-    /* float:right; */
-    width:600px;
-    height:100px;
+    border-radius: 25%;
+    margin-top : 300px;
+    margin-left : 150px;
+    font-weight: bolder;
+
+
 }
 
-#textarea{
-    width:400px;
-    height:130px;
+#sign-out-buttonn {
+    border-radius: 25%;
+    margin-top : 300px;
+    margin-left : 150px;
+    font-weight: bolder
+
 }
+#update{
+    height:50px;
+width:150px;
+font-size: 20px;
+font-weight: bold;
+
+}
+
+#update:hover{
+    transform: scale(1.1);
+
+}
+.update-button{
+    margin-top : 100px;
+    
+   
+}
+
+.add-tweet-button{
+
+    border-radius: 15%;
+    font-weight: bolder;
+    height:30px; 
+     width:100px;
+}
+
+ .tweet-users:hover {
+
+    color: black;
+    font-weight: bolder;
+
+  }
+
+  #timeline{
+      font-size: larger;
+      font-style: inherit;
+  }
