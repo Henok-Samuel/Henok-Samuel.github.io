@@ -65,7 +65,7 @@ textarea {
 }
 .tweet-div:hover{
     transform: scale(1.02);
-    background-color: goldenrod;
+    background-color: rgb(204, 190, 153);
 
 }
 .left-side{
