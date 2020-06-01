@@ -61,10 +61,11 @@ textarea {
     border-style: outset;
     border: 3px solid; 
     margin-bottom: 10px; 
+    background-color: whitesmoke;
 }
 .tweet-div:hover{
     transform: scale(1.02);
-    background-color: rgb(255, 255, 255);
+    background-color: goldenrod;
 
 }
 .left-side{
