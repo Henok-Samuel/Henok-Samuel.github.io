@@ -298,7 +298,11 @@ $(document).ready(() => {
 
   setInterval(function(){
     generateRandomTweet();
-  }, 11000)
+    if($leftSideBarDiv.is(":visible")){
+      displayFeed(streams.home)
+    }
+  
+  }, 4000)
 
   //^^^=================================================================================================================================================
 
