@@ -157,3 +157,11 @@ font-weight: bold;
       font-size: larger;
       font-style: inherit;
   }
+
+  .box{
+    border-radius: 15%;
+    font-weight: bolder;
+    height:30px; 
+    width:100px;
+    
+  }

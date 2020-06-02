@@ -12,6 +12,10 @@ $(document).ready(() => {
     displayFeed(streams.home);
   });
 
+  const homeDivButton = $('<div id=b class=update-button><button id=update id=home-butt>Home Feed</button></div><br><br>').css('text-align:', 'center').on('click', function () {
+    displayFeed(streams.home);
+  });
+
   const $allContentDiv = $('<div id=allContent></div>')
   $body.append($allContentDiv);
   // $allContentDiv.append($('<h1>Header</h1>'))
@@ -179,8 +183,18 @@ $(document).ready(() => {
 
     //ADD BUTTON TO SEND TWEET
     $textBoxAndButtonContainer.append($buttonForTweet)
+    const $profileButton = $('<button></button>').click(function(){
+      displayFeed(steams.users[name][0]);
+    });
+    const $boxForHomeAndProfile = $('<div></div>');
+    $boxForHomeAndProfile.append(homeDivButton);
+    $boxForHomeAndProfile.append($profileButton);
+    
+
 
     $('#signed-left-side').append($textBoxAndButtonContainer);
+    // $('#signed-left-side').append(homeDivButton);
+    $
 
     $timeLineDiv.empty();
 
@@ -298,11 +312,11 @@ $(document).ready(() => {
 
   setInterval(function(){
     generateRandomTweet();
-    if($leftSideBarDiv.is(":visible")){
-      displayFeed(streams.home)
-    }
+    // if($leftSideBarDiv.is(":visible")){
+    //   displayFeed(streams.home)
+    // }
   
-  }, 4000)
+  }, 5000)
 
   //^^^=================================================================================================================================================
 
